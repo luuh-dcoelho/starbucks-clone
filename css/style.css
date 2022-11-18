@@ -25,10 +25,12 @@ header {
 
 .bg-extras {
     position: absolute;
-    right: -500px;
-    bottom: -500px;
+    right: -600px;
+    bottom: -600px;
     width: 1200px;
     height: 1200px;
+    max-width: 1200px;
+    max-height: 1200px;
     border-radius: 700px;
     background: #017143;
     /* z-index: 8000; */
@@ -91,7 +93,8 @@ header {
 .btn-learn {
     text-decoration: none;
     border: 0;
-    padding: 7px 18px;
+    font-size: 20px;
+    padding: 18px 18px;
     border-radius: 10px;
     background: #017143;
     color: white;
@@ -100,10 +103,10 @@ header {
 .sm {
     display: flex;
     width: 50px;
-    position: fixed;
+    position: relative;
     text-align: center;
-    left: 345px;
-    bottom: 200px;
+    right: 980px;
+    bottom: -300px;
 
 }
 
@@ -114,4 +117,74 @@ header {
 
 .green {
     color: #017143;
+}
+
+@media screen and (max-width: 1280px) {
+    .center {
+        max-width: 600px;
+    }
+
+    .bg-extras {
+        display: none;
+    }
+
+    .extras {
+        display: none;
+    }
+
+    .texto-sobre {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .btn-learn {
+        display: flex;
+        margin: 40px auto;
+        font-size: 30px;
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    .texto-sobre p {
+        max-width: 100%;
+    }
+
+    .logo {
+        max-width: 20%;
+    }
+
+    .menu {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .center {
+        max-width: 500px;
+    }
+
+    .texto-sobre {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .btn-learn {
+        display: flex;
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .texto-sobre p {
+        max-width: 100%;
+    }
+
+    .logo {
+
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: none;
+    }
 }
